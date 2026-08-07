@@ -19,7 +19,7 @@
             max-width: 800px; 
             margin: 0 auto;
             display: flex;
-            p {
+            p.autor {
                 font-weight: bold;
             }
         }
@@ -40,9 +40,18 @@
         <img src="Gemini_Generated_Image_cadbqhcadbqhcadb.png" alt="escola brasileira">
         <div>
            <H2>EXERCÍCIO DE AULA DO 1 B</H2>
-           <p>por:samily carla</p>
+           <p class="autor">  por:samily carla</p>
            <P>ESTE SITE É UM EXERCICIO DA AULA DE EDUCAÇÃO DIGITAL</P>
+           <button>🐽<span>0</span></button>
         </div>
     </Main>
 </body>
+<script>
+    const botao = document.querySelector ("button");
+    botao.addEventListener("click", botaoclicado);
+    function botaoclicado ()  {
+        let texto = botao.querySelector ("span");
+        texto.textContent++;
+    }
+</script>
 </html>
